@@ -8,19 +8,41 @@
 import SwiftUI
 
 struct ContentView: View {
+    let columnLayout = Array(repeating: GridItem(), count: 4)
+    
+    let allColors: [Color] = [
+        .pink,
+        .red,
+        .orange,
+        .yellow,
+        .mint,
+        .teal,
+        .cyan,
+        .blue,
+        .indigo,
+        .purple,
+        .brown,
+        .gray
+    ]
+    
+    
     var body: some View {
-        HStack {
-            Button(action: {
-                print("did tap...")
-            }, label: {Text("1")})
-            
-            Button(action: {
-                print("did tap...")
-            }, label: {Text("2")})
-            
-            Button(action: {
-                print("did tap...")
-            }, label: {Text("3")})
+        VStack {
+            LazyVGrid(columns: columnLayout) {
+                ForEach(allColors, id: \.self) { color in
+                    Button {
+                        print("did something")
+                    } label: {
+                        ZStack {
+                            Text("Test of \(color.description)")
+                            RoundedRectangle(cornerRadius: 30.0)
+                                .aspectRatio(1.0, contentMode: ContentMode.fit)
+                                .foregroundColor(color)
+                            .opacity(0.5)
+                        }
+                    }
+                }
+            }
         }
         .padding()
     }
