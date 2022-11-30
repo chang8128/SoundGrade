@@ -31,7 +31,7 @@ struct ContentView: View {
             LazyVGrid(columns: columnLayout) {
                 ForEach(allColors, id: \.self) { color in
                     Button {
-                        print("did something")
+                        print("do something")
                     } label: {
                         ZStack {
                             Text("Test of \(color.description)")
