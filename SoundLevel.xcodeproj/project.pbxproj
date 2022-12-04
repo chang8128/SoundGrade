@@ -15,7 +15,7 @@
 		046748FE2936193D005A6F40 /* SoundLevelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046748FD2936193D005A6F40 /* SoundLevelUITests.swift */; };
 		046749002936193D005A6F40 /* SoundLevelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046748FF2936193D005A6F40 /* SoundLevelUITestsLaunchTests.swift */; };
 		0467490F2936FF03005A6F40 /* TestNumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0467490E2936FF03005A6F40 /* TestNumbersView.swift */; };
-		046749192937588E005A6F40 /* TestColorArrayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046749182937588E005A6F40 /* TestColorArrayView.swift */; };
+		046749192937588E005A6F40 /* ColorArrayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046749182937588E005A6F40 /* ColorArrayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +47,7 @@
 		046748FD2936193D005A6F40 /* SoundLevelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundLevelUITests.swift; sourceTree = "<group>"; };
 		046748FF2936193D005A6F40 /* SoundLevelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundLevelUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0467490E2936FF03005A6F40 /* TestNumbersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNumbersView.swift; sourceTree = "<group>"; };
-		046749182937588E005A6F40 /* TestColorArrayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestColorArrayView.swift; sourceTree = "<group>"; };
+		046749182937588E005A6F40 /* ColorArrayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorArrayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +101,7 @@
 				046748E22936193B005A6F40 /* SoundLevelApp.swift */,
 				046748E42936193B005A6F40 /* ContentView.swift */,
 				0467490E2936FF03005A6F40 /* TestNumbersView.swift */,
-				046749182937588E005A6F40 /* TestColorArrayView.swift */,
+				046749182937588E005A6F40 /* ColorArrayView.swift */,
 				046748E62936193D005A6F40 /* Assets.xcassets */,
 				046748E82936193D005A6F40 /* Preview Content */,
 			);
@@ -263,7 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				046749192937588E005A6F40 /* TestColorArrayView.swift in Sources */,
+				046749192937588E005A6F40 /* ColorArrayView.swift in Sources */,
 				0467490F2936FF03005A6F40 /* TestNumbersView.swift in Sources */,
 				046748E52936193B005A6F40 /* ContentView.swift in Sources */,
 				046748E32936193B005A6F40 /* SoundLevelApp.swift in Sources */,
