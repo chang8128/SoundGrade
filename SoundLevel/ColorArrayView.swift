@@ -43,6 +43,42 @@ struct ColorArrayView: View {
     
     @State var soundLevel = Array<Int>()
     
+    @State var difference = Difference()
+    
+    @State var inputValue = ""
+    
+    @State var output: [([Int], Int, Int)] = []
+    
+    // 使用 Hashable 协议
+    struct HashableTuple: Hashable {
+        let value: ([Int], Int, Int)
+
+        func hash(into hasher: inout Hasher) {
+            // 实现 hash 函数
+            hasher.combine(value.0)
+            hasher.combine(value.1)
+            hasher.combine(value.2)
+        }
+
+        static func == (lhs: HashableTuple, rhs: HashableTuple) -> Bool {
+            // 实现 == 函数
+            return lhs.value.0 == rhs.value.0 && lhs.value.1 == rhs.value.1 && lhs.value.2 == rhs.value.2
+        }
+    }
+    
+    
+    
+    // 将原来的元组转换为 HashableTuple 类型
+    var hashableOutput: [HashableTuple] {
+        output.map { HashableTuple(value: $0)}
+    }
+    
+    
+    func funcTest(_ input: String) -> String {
+        //在这里执行函数操作
+        return "Hello " + input
+    }
+    
     
     var body: some View {
         VStack {
@@ -65,30 +101,27 @@ struct ColorArrayView: View {
                 }
             }
             
-            
-            // 显示从小到大排列的音级的计算结果
-            ScrollView {
-                VStack {
-                    Text("从小到大排序")
-                    ZStack {
-                        HStack {
-                            ForEach(soundLevel.sorted(), id: \.self) {
-                                Text("\($0) ")
-                                    .font(.title3)
-                                    .foregroundColor(Color.blue)
-                            }
-                        }
-                        
-                        RoundedRectangle(cornerRadius: 5.0)
-                            .padding(.horizontal)
-                            .frame(height: 40.0)
-                            .foregroundColor(Color.blue)
-                            .opacity(0.2)
-                    }
-                    
-                    Text("最大音级 - 最小音级")
+            Text("此处显示计算结果：")
+            ForEach(hashableOutput, id: \.self) { item in
+                HStack {
+                    Text("[ \(item.value.0.map { String($0)}.joined(separator: ",")) ]")
+                    Text("\(item.value.1)")
+                    Text("\(item.value.2)")
                 }
             }
+                
+            
+            VStack {
+                TextField("输入参数，不用了", text: $inputValue)
+                
+                // 定义一个按钮，执行函数并输入参数 inputValue
+//                Button(action: {
+//                    self.result = self.funcTest(inputValue)
+//                }) {
+//                    Text("计算音程")
+//                }
+            }
+            
             
             
             // 定义音级按钮 0～11，各按钮对应的序号在点击后传递给[columnLayout]
@@ -118,8 +151,14 @@ struct ColorArrayView: View {
                 .buttonStyle(.bordered)
                 
                 
-                Button("计算音级") {
-                    soundLevel.removeAll()
+                // 定义一个按钮，执行函数并输入参数 inputValue
+                Button(action: {
+//                    self.result = self.difference.minDifference(array: soundLevel)
+//                    var output = difference.minDifference(array: soundLevel)
+                    let result = difference.minDifference(array: soundLevel)
+                    self.output = result
+                }) {
+                    Text("计算音程")
                 }
                 .buttonStyle(.borderedProminent)
             }

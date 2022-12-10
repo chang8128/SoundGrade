@@ -16,6 +16,7 @@
 		046749002936193D005A6F40 /* SoundLevelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046748FF2936193D005A6F40 /* SoundLevelUITestsLaunchTests.swift */; };
 		0467490F2936FF03005A6F40 /* TestNumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0467490E2936FF03005A6F40 /* TestNumbersView.swift */; };
 		046749192937588E005A6F40 /* ColorArrayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046749182937588E005A6F40 /* ColorArrayView.swift */; };
+		0475C6062944C0A9001FEE67 /* Calculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0475C6052944C0A9001FEE67 /* Calculation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		046748FF2936193D005A6F40 /* SoundLevelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundLevelUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0467490E2936FF03005A6F40 /* TestNumbersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNumbersView.swift; sourceTree = "<group>"; };
 		046749182937588E005A6F40 /* ColorArrayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorArrayView.swift; sourceTree = "<group>"; };
+		0475C6052944C0A9001FEE67 /* Calculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				046748E42936193B005A6F40 /* ContentView.swift */,
 				0467490E2936FF03005A6F40 /* TestNumbersView.swift */,
 				046749182937588E005A6F40 /* ColorArrayView.swift */,
+				0475C6072944C0B8001FEE67 /* Model */,
 				046748E62936193D005A6F40 /* Assets.xcassets */,
 				046748E82936193D005A6F40 /* Preview Content */,
 			);
@@ -131,6 +134,14 @@
 				046748FF2936193D005A6F40 /* SoundLevelUITestsLaunchTests.swift */,
 			);
 			path = SoundLevelUITests;
+			sourceTree = "<group>";
+		};
+		0475C6072944C0B8001FEE67 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0475C6052944C0A9001FEE67 /* Calculation.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +278,7 @@
 				0467490F2936FF03005A6F40 /* TestNumbersView.swift in Sources */,
 				046748E52936193B005A6F40 /* ContentView.swift in Sources */,
 				046748E32936193B005A6F40 /* SoundLevelApp.swift in Sources */,
+				0475C6062944C0A9001FEE67 /* Calculation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
