@@ -52,14 +52,14 @@ struct ColorArrayView: View {
     // 使用 Hashable 协议
     struct HashableTuple: Hashable {
         let value: ([Int], Int, Int)
-
+        
         func hash(into hasher: inout Hasher) {
             // 实现 hash 函数
             hasher.combine(value.0)
             hasher.combine(value.1)
             hasher.combine(value.2)
         }
-
+        
         static func == (lhs: HashableTuple, rhs: HashableTuple) -> Bool {
             // 实现 == 函数
             return lhs.value.0 == rhs.value.0 && lhs.value.1 == rhs.value.1 && lhs.value.2 == rhs.value.2
@@ -102,24 +102,22 @@ struct ColorArrayView: View {
             }
             
             Text("此处显示计算结果：")
-            ForEach(hashableOutput, id: \.self) { item in
-                HStack {
-                    Text("[ \(item.value.0.map { String($0)}.joined(separator: ",")) ]")
-                    Text("\(item.value.1)")
-                    Text("\(item.value.2)")
-                }
-            }
-                
+                .multilineTextAlignment(.leading)
+                .frame(alignment: .leading)
             
             VStack {
-                TextField("输入参数，不用了", text: $inputValue)
-                
-                // 定义一个按钮，执行函数并输入参数 inputValue
-//                Button(action: {
-//                    self.result = self.funcTest(inputValue)
-//                }) {
-//                    Text("计算音程")
-//                }
+                ScrollView {
+                    ForEach(hashableOutput, id: \.self) { item in
+                        HStack {
+                            Group {
+                                Text("[ \(item.value.0.map { String($0)}.joined(separator: ",")) ]")
+                                Text("\(item.value.1)")
+                                Text("\(item.value.2)")
+                            }
+                            .font(.title2)
+                        }
+                    }
+                }
             }
             
             
@@ -153,8 +151,6 @@ struct ColorArrayView: View {
                 
                 // 定义一个按钮，执行函数并输入参数 inputValue
                 Button(action: {
-//                    self.result = self.difference.minDifference(array: soundLevel)
-//                    var output = difference.minDifference(array: soundLevel)
                     let result = difference.minDifference(array: soundLevel)
                     self.output = result
                 }) {
@@ -162,9 +158,6 @@ struct ColorArrayView: View {
                 }
                 .buttonStyle(.borderedProminent)
             }
-            
-            
-            
         }
     }
 }
