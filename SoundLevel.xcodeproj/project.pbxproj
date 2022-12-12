@@ -17,6 +17,7 @@
 		0467490F2936FF03005A6F40 /* TestNumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0467490E2936FF03005A6F40 /* TestNumbersView.swift */; };
 		046749192937588E005A6F40 /* ColorArrayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046749182937588E005A6F40 /* ColorArrayView.swift */; };
 		0475C6062944C0A9001FEE67 /* Calculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0475C6052944C0A9001FEE67 /* Calculation.swift */; };
+		04E094832946E368006BA182 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E094822946E368006BA182 /* AboutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		0467490E2936FF03005A6F40 /* TestNumbersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNumbersView.swift; sourceTree = "<group>"; };
 		046749182937588E005A6F40 /* ColorArrayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorArrayView.swift; sourceTree = "<group>"; };
 		0475C6052944C0A9001FEE67 /* Calculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculation.swift; sourceTree = "<group>"; };
+		04E094822946E368006BA182 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			children = (
 				046748E22936193B005A6F40 /* SoundLevelApp.swift */,
 				046748E42936193B005A6F40 /* ContentView.swift */,
+				04E094822946E368006BA182 /* AboutView.swift */,
 				0467490E2936FF03005A6F40 /* TestNumbersView.swift */,
 				046749182937588E005A6F40 /* ColorArrayView.swift */,
 				0475C6072944C0B8001FEE67 /* Model */,
@@ -278,6 +281,7 @@
 				0467490F2936FF03005A6F40 /* TestNumbersView.swift in Sources */,
 				046748E52936193B005A6F40 /* ContentView.swift in Sources */,
 				046748E32936193B005A6F40 /* SoundLevelApp.swift in Sources */,
+				04E094832946E368006BA182 /* AboutView.swift in Sources */,
 				0475C6062944C0A9001FEE67 /* Calculation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

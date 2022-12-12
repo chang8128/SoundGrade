@@ -94,18 +94,18 @@ struct ColorArrayView: View {
                         }
                     }
                     
-                    RoundedRectangle(cornerRadius: 10.0)
+                    RoundedRectangle(cornerRadius: 5.0)
                         .padding(.horizontal)
                         .frame(height: 40.0)
                         .opacity(0.08)
                 }
             }
             
-            Text("此处显示计算结果：")
-                .multilineTextAlignment(.leading)
-                .frame(alignment: .leading)
+            Divider()
+            Text("Shift sound level、Last - 1st， Last 2 - 1st：")
+                .fontWeight(.bold)
             
-            VStack {
+            VStack(alignment: .center) {
                 ScrollView {
                     ForEach(hashableOutput, id: \.self) { item in
                         HStack {
@@ -115,10 +115,14 @@ struct ColorArrayView: View {
                                 Text("\(item.value.2)")
                             }
                             .font(.title2)
+                            .padding(.top, 6.0)
+                            .padding(.horizontal)
                         }
                     }
                 }
+                .padding()
             }
+            
             
             
             
@@ -143,10 +147,11 @@ struct ColorArrayView: View {
             .padding(.horizontal)
             
             HStack {
-                Button("清除数据") {
+                Button("清除输入") {
                     soundLevel.removeAll()
                 }
                 .buttonStyle(.bordered)
+                .padding()
                 
                 
                 // 定义一个按钮，执行函数并输入参数 inputValue
@@ -154,7 +159,7 @@ struct ColorArrayView: View {
                     let result = difference.minDifference(array: soundLevel)
                     self.output = result
                 }) {
-                    Text("计算音程")
+                    Text("计算音级")
                 }
                 .buttonStyle(.borderedProminent)
             }

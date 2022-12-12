@@ -20,7 +20,7 @@ struct Difference {
         
         rotatedArrays.append((sortedArray, firstDiff, secondDiff))
         
-        for _ in 0..<shiftArray.count {
+        for _ in 0..<shiftArray.count - 1 {
             let firstElement = shiftArray.removeFirst()
             shiftArray.append(firstElement)
             var first = shiftArray[shiftArray.count - 1] - shiftArray[0]
