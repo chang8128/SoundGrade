@@ -28,12 +28,12 @@ struct PreLaunch: View {
             }
         }
         .onAppear {
-            withAnimation(.linear(duration: 2)) {
+            withAnimation(.linear(duration: 1.76)) {
                 angle = 0
                 scale = 3
                 opacity = 0
             }
-            withAnimation(.linear.delay(1.75)) {
+            withAnimation(.linear.delay(1.76)) {
                 showMainView = true
             }
         }
