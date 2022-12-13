@@ -102,7 +102,7 @@ struct ColorArrayView: View {
             }
             
             Divider()
-            Text("Shift sound level、Last - 1st， Last 2 - 1st：")
+            Text("Shift sound level、Last - 1st， 2nd last - 1st：")
                 .fontWeight(.bold)
             
             VStack(alignment: .center) {

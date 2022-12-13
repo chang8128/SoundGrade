@@ -11,7 +11,7 @@ struct AboutView: View {
     var body: some View {
         ScrollView {
             VStack {
-                Text("关于音程计算")
+                Text("关于音级计算")
                     .font(.title2)
                     .fontWeight(.heavy)
                 Divider()
@@ -61,6 +61,12 @@ struct AboutView: View {
                     .padding()
                     
             }
+            Divider()
+            
+            Text("联系作者：")
+                .fontWeight(.bold)
+                .padding()
+            Text("如果您对本程序有任何建议或改进意见，请发邮件至: czp356@gmail.com")
         }
     }
 }

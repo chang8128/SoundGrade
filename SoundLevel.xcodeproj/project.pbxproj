@@ -17,6 +17,7 @@
 		0467490F2936FF03005A6F40 /* TestNumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0467490E2936FF03005A6F40 /* TestNumbersView.swift */; };
 		046749192937588E005A6F40 /* ColorArrayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046749182937588E005A6F40 /* ColorArrayView.swift */; };
 		0475C6062944C0A9001FEE67 /* Calculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0475C6052944C0A9001FEE67 /* Calculation.swift */; };
+		047B262629486FEA0099E9DE /* PreLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B262529486FEA0099E9DE /* PreLaunch.swift */; };
 		04E094832946E368006BA182 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E094822946E368006BA182 /* AboutView.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,8 @@
 		0467490E2936FF03005A6F40 /* TestNumbersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNumbersView.swift; sourceTree = "<group>"; };
 		046749182937588E005A6F40 /* ColorArrayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorArrayView.swift; sourceTree = "<group>"; };
 		0475C6052944C0A9001FEE67 /* Calculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculation.swift; sourceTree = "<group>"; };
+		047B262429486D0A0099E9DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		047B262529486FEA0099E9DE /* PreLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreLaunch.swift; sourceTree = "<group>"; };
 		04E094822946E368006BA182 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,7 +105,9 @@
 		046748E12936193B005A6F40 /* SoundLevel */ = {
 			isa = PBXGroup;
 			children = (
+				047B262429486D0A0099E9DE /* Info.plist */,
 				046748E22936193B005A6F40 /* SoundLevelApp.swift */,
+				047B262529486FEA0099E9DE /* PreLaunch.swift */,
 				046748E42936193B005A6F40 /* ContentView.swift */,
 				04E094822946E368006BA182 /* AboutView.swift */,
 				0467490E2936FF03005A6F40 /* TestNumbersView.swift */,
@@ -283,6 +288,7 @@
 				046748E32936193B005A6F40 /* SoundLevelApp.swift in Sources */,
 				04E094832946E368006BA182 /* AboutView.swift in Sources */,
 				0475C6062944C0A9001FEE67 /* Calculation.swift in Sources */,
+				047B262629486FEA0099E9DE /* PreLaunch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,11 +450,12 @@
 				DEVELOPMENT_TEAM = 9ZAW69Y6RG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SoundLevel/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,11 +480,12 @@
 				DEVELOPMENT_TEAM = 9ZAW69Y6RG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SoundLevel/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
