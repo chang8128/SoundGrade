@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  SoundGrade
+
+  Created by 常志平 on 14/12/22.
+  
+*/
+// Chinese name of the App
+CFBundleDisplayName = "音级计算";

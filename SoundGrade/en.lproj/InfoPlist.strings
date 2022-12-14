@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  SoundGrade
+
+  Created by 常志平 on 14/12/22.
+  
+*/
+// English name of the App
+CFBundleDisplayName = "Sound Grade";

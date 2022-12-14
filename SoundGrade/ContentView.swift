@@ -13,13 +13,13 @@ struct ContentView: View {
             ColorArrayView()
                 .tabItem {
                     Image(systemName: "music.quarternote.3")
-                    Text("音级计算")
+                    Text("Sound Grade")
                 }
                 .tag(1)
             AboutView()
                 .tabItem {
                     Image(systemName: "music.note.tv.fill")
-                    Text("关于程序")
+                    Text("About App")
                 }
                 .tag(2)
         }

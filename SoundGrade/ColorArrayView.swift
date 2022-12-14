@@ -84,7 +84,7 @@ struct ColorArrayView: View {
         VStack {
             // 显示用户输入的音级Array
             VStack() {
-                Text("输入的音级")
+                Text("Input Grades :")
                 ZStack {
                     HStack {
                         ForEach(inputGrade, id: \.self) {
@@ -102,7 +102,7 @@ struct ColorArrayView: View {
             }
             
             Divider()
-            Text("Shift sound grade、Last - 1st， 2nd last - 1st：")
+            Text("Shift sound grade,    Last - 1st, 2nd last - 1st")
                 .fontWeight(.bold)
             
             VStack(alignment: .center) {
@@ -115,7 +115,7 @@ struct ColorArrayView: View {
                                 Text("\(item.value.2)")
                             }
                             .font(.title2)
-                            .padding(.top, 6.0)
+//                            .padding(.top, 3.0)
                             .padding(.horizontal)
                         }
                     }
@@ -147,7 +147,7 @@ struct ColorArrayView: View {
             .padding(.horizontal)
             
             HStack {
-                Button("清除输入") {
+                Button("Clear Input") {
                     inputGrade.removeAll()
                 }
                 .buttonStyle(.bordered)
@@ -159,7 +159,7 @@ struct ColorArrayView: View {
                     let result = difference.minDifference(array: inputGrade)
                     self.output = result
                 }) {
-                    Text("计算音级")
+                    Text("Calculate Grade")
                 }
                 .buttonStyle(.borderedProminent)
             }

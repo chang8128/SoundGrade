@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  SoundGrade
+
+  Created by 常志平 on 14/12/22.
+  
+*/
+"Input Grades :" = "Input Grades :";
+"Clear Input" = "Clear Input";
+"Calculate Grade" = "Calculate Grade";
+"Shift sound grade,    Last - 1st, 2nd last - 1st" = "Shift sound grade、Last - 1st， 2nd last - 1st";

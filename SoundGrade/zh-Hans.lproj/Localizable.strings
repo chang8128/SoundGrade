@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  SoundGrade
+
+  Created by 常志平 on 14/12/22.
+  
+*/
+"Sound Grade" = "音级计算";
+"About App" = "关于音级";
+"Input Grades :" = "输入的音级:";
+"Clear Input" = "清除输入";
+"Calculate Grade" = "计算音级";
+"Shift sound grade,    Last - 1st, 2nd last - 1st" = "转换后的音级、最后减第一、倒数第二减第一";

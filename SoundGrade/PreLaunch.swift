@@ -19,7 +19,7 @@ struct PreLaunch: View {
                 ContentView()
             } else {
                 ZStack {
-                    Image("SLLogo")
+                    Image("SGLogo")
                         .frame(width: 200, height: 200)
                         .rotation3DEffect(.degrees(angle), axis: (x: 0.0, y: 1.0, z: 0.0))
                         .opacity(opacity)
